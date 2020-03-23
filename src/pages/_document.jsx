@@ -21,6 +21,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          <title>Coin - 같이의 가치를 믿다</title>
           <link rel="icon" href="icons/favicon.ico" type="image/x-icon" />
           {/* Step 5: Output the styles in the head  */}
           {this.props.styleTags}
