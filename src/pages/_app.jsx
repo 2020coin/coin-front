@@ -1,4 +1,4 @@
-import { Head } from 'react';
+import Head from 'next/head';
 import '../styles/globalStyle.scss';
 
 export default ({ Component, pageProps }) => (
