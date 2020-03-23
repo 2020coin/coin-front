@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Navigation from '../components/Navigation';
+import Profile from '../components/profile';
 
 const Container = styled.div`
   position: absolute;
@@ -14,6 +15,7 @@ const Blue1 = styled.img`
   transform: scale(0.5);
   left: -440px;
   top: -440px;
+  user-select: none;
 `;
 
 const Blue2 = styled.img`
@@ -21,6 +23,7 @@ const Blue2 = styled.img`
   transform: scale(0.5);
   left: -550px;
   bottom: -610px;
+  user-select: none;
 `;
 
 const Orange = styled.img`
@@ -28,12 +31,14 @@ const Orange = styled.img`
   transform: scale(0.7);
   left: -840px;
   top: -220px;
+  user-select: none;
 `;
 
 const Yellow = styled.img`
   position: absolute;
   transform: scale(0.5);
   right: -800px;
+  user-select: none;
 `;
 
 const Produce = styled.section`
@@ -82,8 +87,24 @@ const Project = styled.section`
 const Member = styled.section`
   position: relative;
   width: 100%;
-  height: 200%;
+  height: 230%;
   overflow: hidden;
+
+  .title {
+    top: 250px;
+    right: 230px;
+  }
+
+  .line {
+    top: 230px;
+    right: 230px;
+  }
+
+  .text {
+    text-align: right;
+    top: 430px;
+    right: 230px;
+  }
 `;
 
 const Title = styled.span`
@@ -92,6 +113,7 @@ const Title = styled.span`
   color: #89ADF9;
   font-size: 58px;
   z-index: 2;
+  user-select: none;
 `;
 
 const Line = styled.div`
@@ -105,32 +127,48 @@ const Line = styled.div`
 
 const Logo = styled.img`
   position: absolute;
-  transform: scale(0.7);
+  width: 18%;
+  height: auto;
   padding: 35px 65px 35px 65px;
   border-radius: 43px;
   box-shadow: 0 3px 10px #29257E28;
-  left: 580px;
+  left: 30%;
   top: 70px;
+  user-select: none;
 `;
 
 const ProduceIllust = styled.img`
   position: absolute;
-  transform: scale(0.7);
+  width: 30%;
+  height: quto;
   padding: 0 55px 0 55px;
   border-radius: 43px;
   box-shadow: 0 3px 10px #29257E28;
   background-color: #FCFDFF;
   z-index: 1;
-  left: 50px;
-  top: 150px;
+  left: 120px;
+  top: 230px;
+  user-select: none;
 `;
 
 const ProjectIllust = styled.img`
   position: absolute;
-  transform: scale(0.9);
+  width: 35%;
+  height: auto;
   right: 10px;
   top: 50%;
   transform: translate(0, -50%);
+  user-select: none;
+`;
+
+const MemberIllust = styled.img`
+  position: absolute;
+  width: 45%;
+  height: auto;
+  left: 10px;
+  top: 30%;
+  transform: translate(0, -50%);
+  user-select: none;
 `;
 
 const ToolList = styled.ul`
@@ -153,6 +191,7 @@ const ToolIcon = styled.img`
   width: 50px;
   height: 50px;
   padding: 25px;
+  user-select: none;
 `;
 
 const Slogan = styled.span`
@@ -162,6 +201,7 @@ const Slogan = styled.span`
   top: 450px;
   font-size: 38px;
   z-index: 2;
+  user-select: none;
 
   &:after {
     display: block;
@@ -177,6 +217,25 @@ const Text = styled.span`
   font-size: 20px;
   line-height: 1.2em;
   z-index: 2;
+  user-select: none;
+`;
+
+const ProfileList = styled.ul`
+  position: absolute;
+  top: 45%;
+`;
+
+const ProfileItem = styled.li`
+  background-color: #FCFDFF;
+  width: 250px;
+  height: 400px;
+  display: inline-block;
+  border-radius: 30px;
+  box-shadow: 0 3px 10px #29257E28;
+  text-align: center;
+  margin-left: 80px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 `;
 
 const page = () => {
@@ -272,10 +331,39 @@ const page = () => {
         </Text>
       </Project>
       <Member id="Member">
+        <MemberIllust src="illustrations/Member.svg" />
         <Yellow src="illustrations/Yellow.svg" />
         <Blue2 src="illustrations/Blue_2.svg" />
         <Line className="line" />
         <Title className="title">MEMBER</Title>
+        <Text className="text">
+          코인은 개발자, 디자이너 그리고 기획자로 이루어져 있습니다
+          <br />
+          아래의 카드를 클릭하면 동아리원의 평소 모습을 볼 수 있습니다
+        </Text>
+        <ProfileList>
+          <ProfileItem>
+            <Profile name="김한경" />
+          </ProfileItem>
+          <ProfileItem>
+            <Profile name="심재성" />
+          </ProfileItem>
+          <ProfileItem>
+            <Profile name="김상민" />
+          </ProfileItem>
+          <ProfileItem>
+            <Profile name="김민상" />
+          </ProfileItem>
+          <ProfileItem>
+            <Profile name="김관우" />
+          </ProfileItem>
+          <ProfileItem>
+            <Profile name="박승아" />
+          </ProfileItem>
+          <ProfileItem>
+            <Profile name="한진향" />
+          </ProfileItem>
+        </ProfileList>
       </Member>
     </Container>
   );
