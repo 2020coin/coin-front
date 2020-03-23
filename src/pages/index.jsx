@@ -32,6 +32,10 @@ const Orange = styled.img`
   left: -840px;
   top: -220px;
   user-select: none;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const Yellow = styled.img`
@@ -61,6 +65,23 @@ const Produce = styled.section`
     top: 570px;
     right: 230px;
   }
+
+  @media (max-width: 1024px) {
+    .title {
+      top: 180px;
+      right: 20px;
+    }
+
+    .line {
+      top: 160px;
+      right: 20px;
+    }
+
+    .text {
+      top: 420px;
+      right: 20px;
+    }
+  }
 `;
 
 const Project = styled.section`
@@ -81,6 +102,24 @@ const Project = styled.section`
   .text {
     top: 520px;
     left: 230px;
+  }
+
+  @media (max-width: 1024px) {
+    .title {
+      top: 180px;
+      left: 20px;
+    }
+
+    .line {
+      top: 160px;
+      left: 20px;
+    }
+
+    .text {
+      top: 320px;
+      left: 20px;
+      margin-right: 20px;
+    }
   }
 `;
 
@@ -104,6 +143,41 @@ const Member = styled.section`
     text-align: right;
     top: 430px;
     right: 230px;
+
+    #mobile {
+      display: none;
+    }
+
+    #pc {
+      display: inline;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    height: 100%;
+
+    .title {
+      top: 180px;
+      right: 20px;
+    }
+
+    .line {
+      top: 160px;
+      right: 20px;
+    }
+
+    .text {
+      top: 320px;
+      right: 20px;
+
+      #mobile {
+        display: inline;
+      }
+
+      #pc {
+        display: none;
+      }
+    }
   }
 `;
 
@@ -135,6 +209,10 @@ const Logo = styled.img`
   left: 30%;
   top: 70px;
   user-select: none;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const ProduceIllust = styled.img`
@@ -149,6 +227,10 @@ const ProduceIllust = styled.img`
   left: 120px;
   top: 230px;
   user-select: none;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const ProjectIllust = styled.img`
@@ -159,6 +241,10 @@ const ProjectIllust = styled.img`
   top: 50%;
   transform: translate(0, -50%);
   user-select: none;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const MemberIllust = styled.img`
@@ -169,12 +255,20 @@ const MemberIllust = styled.img`
   top: 30%;
   transform: translate(0, -50%);
   user-select: none;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const ToolList = styled.ul`
   position: absolute;
   left: 225px;
   top: 300px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const ToolItem = styled.li`
@@ -210,6 +304,11 @@ const Slogan = styled.span`
     color: #324CBA;
     margin-top: 10px;
   }
+
+  @media (max-width: 1024px) {
+    top: 250px;
+    right: 20px;
+  }
 `;
 
 const Text = styled.span`
@@ -223,6 +322,10 @@ const Text = styled.span`
 const ProfileList = styled.ul`
   position: absolute;
   top: 45%;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const ProfileItem = styled.li`
@@ -339,7 +442,8 @@ const page = () => {
         <Text className="text">
           코인은 개발자, 디자이너 그리고 기획자로 이루어져 있습니다
           <br />
-          아래의 카드를 클릭하면 동아리원의 평소 모습을 볼 수 있습니다
+          <span id="pc">아래의 카드를 클릭하면 동아리원의 평소 모습을 볼 수 있습니다</span>
+          <span id="mobile">컴퓨터로 접속하면 동아리원의 프로필을 확인할 수 있습니다</span>
         </Text>
         <ProfileList>
           <ProfileItem>

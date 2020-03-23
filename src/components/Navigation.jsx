@@ -9,6 +9,10 @@ const Container = styled.div`
   right: 100px;
   top: 50px;
   z-index: 9999;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const List = styled.ul`
