@@ -376,17 +376,17 @@ const page = () => {
     <Container>
       <Navigation select={select} />
       <Produce id="Produce">
-        <Logo src="illustrations/Logo.svg" data-aos="zoom-in" />
-        <ProduceIllust src="illustrations/Produce.svg" data-aos="zoom-in" />
+        <Logo src="illustrations/Logo.svg" data-aos="fade-left" />
+        <ProduceIllust src="illustrations/Produce.svg" data-aos="fade-right" />
         <Blue1 src="illustrations/Blue_1.svg" />
-        <Line className="line" data-aos="fade-up" />
-        <Title className="title" data-aos="fade-up">
+        <Line className="line" data-aos="fade-right" />
+        <Title className="title" data-aos="fade-left">
           PRODUCE
         </Title>
-        <Slogan data-aos="fade-up">
+        <Slogan data-aos="fade-down">
           같이의 가치를 믿다
         </Slogan>
-        <Text className="text" data-aos="fade-up">
+        <Text className="text" data-aos="fade-up-left">
           코인은
           <br />
           한국디지털미디어고등학교의 IT 프로젝트 동아리입니다
@@ -400,7 +400,7 @@ const page = () => {
         <ProjectIllust src="illustrations/Project.svg" data-aos="zoom-in" />
         <Orange src="illustrations/Orange.svg" />
         <Line className="line" data-aos="slide-left" />
-        <Title className="title" data-aos="slide-left">
+        <Title className="title" data-aos="slide-right">
           PROJECT
         </Title>
         <ToolList>
@@ -443,11 +443,11 @@ const page = () => {
         <MemberIllust src="illustrations/Member.svg" data-aos="slide-right" />
         <Yellow src="illustrations/Yellow.svg" />
         <Blue2 src="illustrations/Blue_2.svg" />
-        <Line className="line" data-aos="slide-up" />
-        <Title className="title" data-aos="slide-up">
+        <Line className="line" data-aos="slide-left" />
+        <Title className="title" data-aos="slide-right">
           MEMBER
         </Title>
-        <Text className="text" data-aos="slide-up">
+        <Text className="text" data-aos="fade-up">
           코인은 개발자, 디자이너 그리고 기획자로 이루어져 있습니다
           <br />
           <span id="pc">
@@ -458,25 +458,25 @@ const page = () => {
           </span>
         </Text>
         <ProfileList>
-          <ProfileItem>
+          <ProfileItem data-aos="zoom-in">
             <Profile name="김한경" />
           </ProfileItem>
-          <ProfileItem>
+          <ProfileItem data-aos="zoom-in">
             <Profile name="심재성" />
           </ProfileItem>
-          <ProfileItem>
+          <ProfileItem data-aos="zoom-in">
             <Profile name="김상민" />
           </ProfileItem>
-          <ProfileItem>
+          <ProfileItem data-aos="zoom-in">
             <Profile name="김민상" />
           </ProfileItem>
-          <ProfileItem>
+          <ProfileItem data-aos="zoom-in">
             <Profile name="김관우" />
           </ProfileItem>
-          <ProfileItem>
+          <ProfileItem data-aos="zoom-in">
             <Profile name="박승아" />
           </ProfileItem>
-          <ProfileItem>
+          <ProfileItem data-aos="zoom-in">
             <Profile name="한진향" />
           </ProfileItem>
         </ProfileList>
