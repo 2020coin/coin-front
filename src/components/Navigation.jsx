@@ -55,7 +55,7 @@ const Item = styled.li`
 `;
 
 const Text = styled.span`
-  user-select:none;
+  user-select: none;
   font-size: 18px;
   font-weight: bold;
 `;
