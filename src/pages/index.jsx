@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import AOS from 'aos';
 
+import '../styles/aos.css';
 import Navigation from '../components/Navigation';
 import Profile from '../components/profile';
 
@@ -238,7 +240,7 @@ const ProjectIllust = styled.img`
   width: 35%;
   height: auto;
   right: 10px;
-  top: 50%;
+  top: 30%;
   transform: translate(0, -50%);
   user-select: none;
 
@@ -252,7 +254,7 @@ const MemberIllust = styled.img`
   width: 45%;
   height: auto;
   left: 10px;
-  top: 30%;
+  top: 10%;
   transform: translate(0, -50%);
   user-select: none;
 
@@ -368,21 +370,23 @@ const page = () => {
     animate();
   };
 
+  useEffect(AOS.init);
+
   return (
     <Container>
       <Navigation select={select} />
       <Produce id="Produce">
-        <Logo src="illustrations/Logo.svg" />
-        <ProduceIllust src="illustrations/Produce.svg" />
+        <Logo src="illustrations/Logo.svg" data-aos="zoom-in" />
+        <ProduceIllust src="illustrations/Produce.svg" data-aos="zoom-in" />
         <Blue1 src="illustrations/Blue_1.svg" />
-        <Line className="line" />
-        <Title className="title">
+        <Line className="line" data-aos="fade-up" />
+        <Title className="title" data-aos="fade-up">
           PRODUCE
         </Title>
-        <Slogan>
+        <Slogan data-aos="fade-up">
           같이의 가치를 믿다
         </Slogan>
-        <Text className="text">
+        <Text className="text" data-aos="fade-up">
           코인은
           <br />
           한국디지털미디어고등학교의 IT 프로젝트 동아리입니다
@@ -393,10 +397,12 @@ const page = () => {
         </Text>
       </Produce>
       <Project id="Project">
-        <ProjectIllust src="illustrations/Project.svg" />
+        <ProjectIllust src="illustrations/Project.svg" data-aos="zoom-in" />
         <Orange src="illustrations/Orange.svg" />
-        <Line className="line" />
-        <Title className="title">PROJECT</Title>
+        <Line className="line" data-aos="slide-left" />
+        <Title className="title" data-aos="slide-left">
+          PROJECT
+        </Title>
         <ToolList>
           <ToolItem>
             <ToolIcon src="tools/vscode.png" />
@@ -414,7 +420,7 @@ const page = () => {
             <ToolIcon src="tools/xd.png" />
           </ToolItem>
         </ToolList>
-        <Text className="text">
+        <Text className="text" data-aos="fade-up-right">
           디자인팀은 Adobe의 Photoshop, Illustrator, XD 프로그램을 이용해서
           <br />
           프로젝트를 진행하게 됩니다
@@ -434,16 +440,22 @@ const page = () => {
         </Text>
       </Project>
       <Member id="Member">
-        <MemberIllust src="illustrations/Member.svg" />
+        <MemberIllust src="illustrations/Member.svg" data-aos="slide-right" />
         <Yellow src="illustrations/Yellow.svg" />
         <Blue2 src="illustrations/Blue_2.svg" />
-        <Line className="line" />
-        <Title className="title">MEMBER</Title>
-        <Text className="text">
+        <Line className="line" data-aos="slide-up" />
+        <Title className="title" data-aos="slide-up">
+          MEMBER
+        </Title>
+        <Text className="text" data-aos="slide-up">
           코인은 개발자, 디자이너 그리고 기획자로 이루어져 있습니다
           <br />
-          <span id="pc">아래의 카드를 클릭하면 동아리원의 평소 모습을 볼 수 있습니다</span>
-          <span id="mobile">컴퓨터로 접속하면 동아리원의 프로필을 확인할 수 있습니다</span>
+          <span id="pc">
+            아래의 카드를 클릭하면 동아리원의 평소 모습을 볼 수 있습니다
+          </span>
+          <span id="mobile">
+            컴퓨터로 접속하면 동아리원의 프로필을 확인할 수 있습니다
+          </span>
         </Text>
         <ProfileList>
           <ProfileItem>
