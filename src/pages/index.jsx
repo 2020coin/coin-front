@@ -185,7 +185,7 @@ const Member = styled.section`
 
 const Title = styled.span`
   position: absolute;
-  font-family: 'Impact LT Std';
+  font-family: 'Fredoka One';
   color: #89ADF9;
   font-size: 58px;
   z-index: 2;
