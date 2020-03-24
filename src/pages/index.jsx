@@ -343,6 +343,10 @@ const ProfileItem = styled.li`
   margin-bottom: 20px;
 `;
 
+const OpenChat = styled.a`
+  color: orange;
+`;
+
 const page = () => {
   const select = (p) => {
     const start = document.documentElement.scrollTop;
@@ -394,6 +398,8 @@ const page = () => {
           개발자, 디자이너, 기획자가 모여
           <br />
           원하는 프로젝트를 기획 및 진행합니다
+          <br />
+          <OpenChat href="https://open.kakao.com/o/ssqdbA3b">카카오톡 오픈채팅</OpenChat>
         </Text>
       </Produce>
       <Project id="Project">
