@@ -328,6 +328,34 @@ const ProfileList = styled.ul`
   @media (max-width: 1024px) {
     display: none;
   }
+
+  @media (max-width: 1350px) {
+    transform: scale(0.9);
+
+    li {
+      margin-left: 60px;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    transform: scale(0.8);
+
+    li {
+      margin-left: 40px;
+    }
+  }
+
+  @media (max-width: 1160px) {
+    li {
+      margin-left: 30px;
+    }
+  }
+
+  @media (max-width: 1120px) {
+    li {
+      margin-left: 5px;
+    }
+  }
 `;
 
 const ProfileItem = styled.li`
