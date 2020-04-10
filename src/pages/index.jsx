@@ -4,7 +4,7 @@ import AOS from 'aos';
 
 import '../styles/aos.css';
 import Navigation from '../components/Navigation';
-import Profile from '../components/profile';
+import Profile from '../components/Profile';
 
 const Container = styled.div`
   position: absolute;
