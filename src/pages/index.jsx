@@ -128,7 +128,7 @@ const Project = styled.section`
 const Member = styled.section`
   position: relative;
   width: 100%;
-  height: 230%;
+  height: 320%;
   overflow: hidden;
 
   .title {
@@ -512,6 +512,15 @@ const page = () => {
           </ProfileItem>
           <ProfileItem data-aos="zoom-in">
             <Profile name="한진향" />
+          </ProfileItem>
+          <ProfileItem data-aos="zoom-in">
+            <Profile name="남승일" />
+          </ProfileItem>
+          <ProfileItem data-aos="zoom-in">
+            <Profile name="김재연" />
+          </ProfileItem>
+          <ProfileItem data-aos="zoom-in">
+            <Profile name="이채은" />
           </ProfileItem>
         </ProfileList>
       </Member>

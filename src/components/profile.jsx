@@ -72,6 +72,27 @@ const memberData = {
       document.getElementById('N한진향').textContent = '쿨쿨..';
     },
   },
+  남승일: {
+    role: '개쩌는 개발자',
+    grade: '1학년',
+    department: 'HD',
+    position: '프론트엔드',
+    profileChange: () => {},
+  },
+  김재연: {
+    role: '쟁연',
+    grade: '1학년',
+    department: 'DC',
+    position: '디자인',
+    profileChange: () => {},
+  },
+  이채은: {
+    role: '새싹 개발자',
+    grade: '1학년',
+    department: 'WP',
+    position: '프론트엔드',
+    profileChange: () => {},
+  },
 };
 
 const profile = (props) => {
@@ -81,9 +102,17 @@ const profile = (props) => {
   const method = memberData[name].profileChange;
 
   return (
-    <div aria-hidden className="profileContainer" onClick={method} onKeyPress={method} role="button">
+    <div
+      aria-hidden
+      className="profileContainer"
+      onClick={method}
+      onKeyPress={method}
+      role="button"
+    >
       <img className="image" id={`I${name}`} src={imgSrc} alt="profileImage" />
-      <p className="name" id={`N${name}`}>{name}</p>
+      <p className="name" id={`N${name}`}>
+        {name}
+      </p>
       <p className="id">
         {data.grade}
         {' '}
@@ -111,9 +140,9 @@ const profile = (props) => {
 
           .name {
             font-size: 35px;
-            color: #3769E5;
+            color: #3769e5;
           }
-          
+
           .role {
             font-size: 18px;
           }
