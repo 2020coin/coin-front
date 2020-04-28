@@ -523,7 +523,7 @@ const page = () => {
             <Profile name="이채은" />
           </ProfileItem>
           <ProfileItem data-aos="zoom-in">
-            <Profile name="김민준준" />
+            <Profile name="김민준" />
           </ProfileItem>
         </ProfileList>
       </Member>
