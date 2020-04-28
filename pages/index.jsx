@@ -522,6 +522,9 @@ const page = () => {
           <ProfileItem data-aos="zoom-in">
             <Profile name="이채은" />
           </ProfileItem>
+          <ProfileItem data-aos="zoom-in">
+            <Profile name="김민준준" />
+          </ProfileItem>
         </ProfileList>
       </Member>
     </Container>

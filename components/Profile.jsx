@@ -90,7 +90,14 @@ const memberData = {
     role: '새싹 개발자',
     grade: '1학년',
     department: 'WP',
-    position: '프론트엔드',
+    position: '프론트엔드, 디자인인',
+    profileChange: () => {},
+  },
+  김민준: {
+    role: '로열로더',
+    grade: '1학년',
+    department: 'EB',
+    position: '기획, 디자인',
     profileChange: () => {},
   },
 };
