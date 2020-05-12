@@ -128,7 +128,7 @@ const Project = styled.section`
 const Member = styled.section`
   position: relative;
   width: 100%;
-  height: 320%;
+  height: 420%;
   overflow: hidden;
 
   .title {
