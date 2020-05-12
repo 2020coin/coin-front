@@ -186,7 +186,7 @@ const Member = styled.section`
 const Title = styled.span`
   position: absolute;
   font-family: 'Fredoka One';
-  color: #89ADF9;
+  color: #89adf9;
   font-size: 58px;
   z-index: 2;
   user-select: none;
@@ -194,7 +194,7 @@ const Title = styled.span`
 
 const Line = styled.div`
   position: absolute;
-  background-color: #EBF1FF;
+  background-color: #ebf1ff;
   border-radius: 5px;
   width: 120px;
   height: 10px;
@@ -207,7 +207,7 @@ const Logo = styled.img`
   height: auto;
   padding: 35px 65px 35px 65px;
   border-radius: 43px;
-  box-shadow: 0 3px 10px #29257E28;
+  box-shadow: 0 3px 10px #29257e28;
   left: 30%;
   top: 70px;
   user-select: none;
@@ -223,8 +223,8 @@ const ProduceIllust = styled.img`
   height: quto;
   padding: 0 55px 0 55px;
   border-radius: 43px;
-  box-shadow: 0 3px 10px #29257E28;
-  background-color: #FCFDFF;
+  box-shadow: 0 3px 10px #29257e28;
+  background-color: #fcfdff;
   z-index: 1;
   left: 120px;
   top: 230px;
@@ -280,7 +280,7 @@ const ToolItem = styled.li`
   border-radius: 50px;
   width: 100px;
   height: 100px;
-  box-shadow: 0 3px 10px #29257E28;
+  box-shadow: 0 3px 10px #29257e28;
 `;
 
 const ToolIcon = styled.img`
@@ -292,7 +292,7 @@ const ToolIcon = styled.img`
 
 const Slogan = styled.span`
   position: absolute;
-  color: #3769E5;
+  color: #3769e5;
   right: 230px;
   top: 450px;
   font-size: 38px;
@@ -302,8 +302,8 @@ const Slogan = styled.span`
   &:after {
     display: block;
     text-align: right;
-    content: "COIN";
-    color: #324CBA;
+    content: 'COIN';
+    color: #324cba;
     margin-top: 10px;
   }
 
@@ -359,12 +359,12 @@ const ProfileList = styled.ul`
 `;
 
 const ProfileItem = styled.li`
-  background-color: #FCFDFF;
+  background-color: #fcfdff;
   width: 250px;
   height: 400px;
   display: inline-block;
   border-radius: 30px;
-  box-shadow: 0 3px 10px #29257E28;
+  box-shadow: 0 3px 10px #29257e28;
   text-align: center;
   margin-left: 80px;
   margin-top: 30px;
@@ -415,9 +415,7 @@ const page = () => {
         <Title className="title" data-aos="fade-left">
           PRODUCE
         </Title>
-        <Slogan data-aos="fade-down">
-          같이의 가치를 믿다
-        </Slogan>
+        <Slogan data-aos="fade-down">같이의 가치를 믿다</Slogan>
         <Text className="text" data-aos="fade-up-left">
           코인은
           <br />
@@ -484,12 +482,8 @@ const page = () => {
         <Text className="text" data-aos="fade-up">
           코인은 개발자, 디자이너 그리고 기획자로 이루어져 있습니다
           <br />
-          <span id="pc">
-            아래의 카드를 클릭하면 동아리원의 평소 모습을 볼 수 있습니다
-          </span>
-          <span id="mobile">
-            컴퓨터로 접속하면 동아리원의 프로필을 확인할 수 있습니다
-          </span>
+          <span id="pc">아래의 카드를 클릭하면 동아리원의 평소 모습을 볼 수 있습니다</span>
+          <span id="mobile">컴퓨터로 접속하면 동아리원의 프로필을 확인할 수 있습니다</span>
         </Text>
         <ProfileList>
           <ProfileItem data-aos="zoom-in">
@@ -524,6 +518,12 @@ const page = () => {
           </ProfileItem>
           <ProfileItem data-aos="zoom-in">
             <Profile name="김민준" />
+          </ProfileItem>
+          <ProfileItem data-aos="zoom-in">
+            <Profile name="박진성" />
+          </ProfileItem>
+          <ProfileItem data-aos="zoom-in">
+            <Profile name="손승욱" />
           </ProfileItem>
         </ProfileList>
       </Member>

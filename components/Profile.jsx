@@ -36,7 +36,7 @@ const memberData = {
     role: '유사 개발자',
     grade: '2학년',
     department: 'HD',
-    position: '프론트엔드',
+    position: '백엔드',
     profileChange: () => {
       document.getElementById('I김민상').src = '/profiles/우욱.png';
       document.getElementById('N김민상').textContent = '우욱..';
@@ -46,7 +46,7 @@ const memberData = {
     role: '브레인 담당',
     grade: '2학년',
     department: 'WP',
-    position: '프론트엔드',
+    position: '백엔드',
     profileChange: () => {
       document.getElementById('I김관우').src = '/profiles/까꿍.png';
       document.getElementById('N김관우').textContent = '까꿍!';
@@ -90,7 +90,7 @@ const memberData = {
     role: '새싹 개발자',
     grade: '1학년',
     department: 'WP',
-    position: '프론트엔드, 디자인인',
+    position: '프론트엔드, 디자인',
     profileChange: () => {},
   },
   김민준: {
@@ -98,6 +98,20 @@ const memberData = {
     grade: '1학년',
     department: 'EB',
     position: '기획, 디자인',
+    profileChange: () => {},
+  },
+  박진성: {
+    role: '아빠 안잔다',
+    grade: '1학년',
+    department: 'WP',
+    position: '백엔드',
+    profileChange: () => {},
+  },
+  손승욱: {
+    role: '슬욱',
+    grade: '1학년',
+    department: 'EB',
+    position: '디자인',
     profileChange: () => {},
   },
 };
